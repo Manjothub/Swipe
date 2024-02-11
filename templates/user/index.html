@@ -1,0 +1,32 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% block body %}
+<main>
+	{% include "common/error.html" %}
+	<div class="layout">
+		<!-- Start of SideNav -->
+		{% include "layouts/side_nav.html" %}
+		<!-- End of SideNav -->
+
+		<!-- Start of Sidebar -->
+		{% include "layouts/sidebar.html" %}
+		<!-- End of Sidebar -->
+		
+		<!-- Start of Add Friends -->
+		{% include "layouts/add_friend.html" %}
+		<!-- End of Add Friends -->
+
+		<!-- Start of Create Chat -->
+		{% include "layouts/create_chat.html" %}
+		<!-- End of Create Chat -->
+
+		<!-- Start of Chat Room -->
+		{% include "layouts/room_screen.html" %}
+		<!-- End of Chat Room -->
+
+	</div> 
+</main>
+{% endblock body %}
+
+
+
